@@ -1,3 +1,8 @@
+/*	Copyright (c) 2021 DGraphics
+/*	Author: DGraphics
+/*	This file is made for Current Template
+*/
+
 let init = () => {
 
     let container = document.getElementsByClassName('fixed-slider-container')[0],

@@ -1,3 +1,19 @@
+/*	Copyright (c) 2021 DGraphics
+/*	Author: DGraphics
+/*	This file is made for Current Template
+
+/* Body */
+ /* Navigation */
+ /* Fixed Slider */
+ /* Page Progression */
+ /* Page Progression */
+ /* Tyler Rey Media Queries (For Small Devices) */
+
+
+
+ 
+/* Body */
+
 body{
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
@@ -267,7 +283,7 @@ display: inline-block;
 
 
 
- /* Mobile size adjustments */
+ /* Tyler Rey Media Queries (For Small Devices) */
 
 @media only screen and (max-width: 550px){
 

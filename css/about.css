@@ -1,3 +1,14 @@
+/*	Copyright (c) 2021 DGraphics
+/*	Author: DGraphics
+/*	This file is made for Current Template
+
+/* Body */
+/* Body Content */
+
+
+
+/* Body */
+
 body{
     overflow-x: hidden;
     overflow-y: visible;
@@ -47,6 +58,9 @@ a{
 .menu-items a:hover{
     opacity: 0.5;
 }
+
+
+/* Body Content */
 
 .left-side img{
     width: 100%;
