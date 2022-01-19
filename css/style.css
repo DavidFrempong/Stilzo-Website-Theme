@@ -52,6 +52,7 @@ a{
 }
 
 
+
  /* Fixed Slider */
 
  .fixed-slider{
@@ -176,7 +177,7 @@ color: #000000;
 position: relative;
 width: 255px;
 height: 47px;
-background: #00cce7;
+background: #1490a0;
 border-radius: 20px;
 right: 32px;
 display: flex;
@@ -214,6 +215,7 @@ cursor: pointer;
     opacity: 1;
     transform: translate3d(0,0,0);
 }
+
 
 
  /* Page Progression */
@@ -265,6 +267,7 @@ display: inline-block;
 
 
 
+ /* Mobile size adjustments */
 
 @media only screen and (max-width: 550px){
 
