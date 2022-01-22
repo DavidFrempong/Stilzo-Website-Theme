@@ -52,6 +52,7 @@ a{
     right: 0px;
     position: relative;
     padding-right: 55px;
+    display: none;
 }
 
 .right-side ul{
@@ -98,8 +99,8 @@ a{
      height: 100vh;
      opacity: 0;
      cursor: pointer;
-     transition: opacity 2s ease-in-out;
-     filter: saturate(1);
+     transition: opacity 1s ease-in-out;
+    /* filter: saturate(1); */
      position: absolute;
      z-index: 2;
  }
@@ -111,7 +112,7 @@ a{
  }
 
 .fixed-slider-slidemain-active  .fixed-slider.slide-background{
-     opacity: 0.85;
+     opacity: 1;
  }
 
 .slider-item{
@@ -177,7 +178,7 @@ a{
 
 .fixed-slider.information-buttons{
     position: relative;
-    top: 70px;
+    top: 110px;
     justify-content: center;
     margin: 0 auto;
     display: flex;
