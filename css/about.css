@@ -18,14 +18,28 @@ body{
 .main-content{
     display: block;
     position: relative;
-    top: 190px;
+    top: 110px;
     width: fit-content;
 }
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+
+/* Navigation */
 
 .navbar{
     background: none;
     width: 100%;
     height: 40px;
+    position: relative;
 }
 
 a{
@@ -33,11 +47,12 @@ a{
     font-weight: 500;
 }
 
-.right.side-navbar{
-    float: right;
-    right: 0px;
+.left-side-navbar{
+    left: 0px;
     position: relative;
-    padding-right: 55px;
+}
+
+.right.side-navbar{
     display: none;
 }
 
@@ -51,7 +66,6 @@ a{
      opacity: 0.5;
  }
  
-
  .menu-items{
     cursor: pointer;
     display: none;
@@ -61,9 +75,41 @@ a{
     opacity: 0.5;
 }
 
+/* Animations */
+
+@keyframes fadein {
+    from { opacity: 0;
+        transform: translate3d(-100vw,0,0);
+        }
+
+    to   { opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes fadeout {
+    from { opacity: 1;
+        transform: translate3d(0,0,0);
+        }
+
+    to   { opacity: 0;
+        transform: translate3d(100vw,0,0);
+    }
+}
+
+
+@keyframes fadeup {
+    from { opacity: 0;
+        transform: translate3d(0,200px,0);
+        }
+
+    to   { opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
 
 /* Body Content */
-
 
 
 /* Introduction (Top) */
@@ -72,14 +118,22 @@ a{
     display: flex;
     left: 40px;
     position: relative;
+    margin-bottom: 3rem;
 }
 
-.left-side{
-    display: flex;
+.left-side.info{
+position: relative;
+left: 30%;
+}
+
+.left-side.image{
+    margin-right: 10%;
+    animation-name: fadein;
+    animation-duration: 1.5s;
 }
 
 .left-side img{
-    width: 100%;
+    width: 160%;
     border-radius: 10px;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
 }
@@ -91,18 +145,15 @@ a{
     height: 100%;
 }
 
-.right.side h2{
-    font-size: 40px;
-    margin-bottom: 40px;
+.tyler-rey.introduction span{
+    color:rgb(250, 114, 114);
 }
 
-.right.side p{
-    font-size: 21px;
-    line-height: 25px;
-    }
-
-    .first-paragraph{
-        margin-bottom: 20px;
+.first-paragraph{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:rgb(48, 48, 48);
+    line-height: 1.5rem;
 }
 
 .social-media-icons{
@@ -126,34 +177,130 @@ a{
     left: 1.7em;
 }
 
+
 /* Services */
 
 .tyler-rey.services{
     background-color: rgb(20, 20, 20);
     color: #ffffff;
     position: relative;
-    top: 100px;
+    top: 120px;
+    padding: 4.2rem;
 }
 
+.tyler-rey.all-services{
+    top: 2.4rem;
+    position: relative;
+    animation-name: fadeup;
+    animation-duration: 4s;
+}
+
+.tyler-rey.services-one{
+    display: flex;
+}
+
+.service{
+    margin-bottom: 9rem;
+}
+
+.service h2{
+    margin-top: 1.7rem;
+}
+
+.service p{
+    width: 30%;
+    line-height: 1.4rem;
+}
+
+.triangle-one{
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+    border-right:50px solid rgb(33, 201, 207); 
+  /*  transform: rotate(-55deg); */
+    position: relative;
+    top: 10%;
+    left: 70px;
+}
+
+.triangle-one:hover{
+    border-right:50px solid rgb(8, 150, 155);
+}
+
+.triangle-two{
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+    border-right:50px solid blue; 
+    position: relative;
+    top: 35%;
+    left: 70px;
+}
+
+.triangle-two:hover{
+    border-right:50px solid rgb(14, 3, 172);
+}
+
+.triangle-three{
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+    border-right:50px solid rgb(87, 30, 243); 
+    position: relative;
+    top: 60%;
+    left: 70px;
+}
+
+.triangle-three:hover{
+    border-right:50px solid rgb(63, 26, 167);
+}
+
+.service-header-one{
+color: rgb(33, 201, 207);
+}
+
+.service-header-two{
+    color: rgb(75, 158, 253);
+    }
+
+    .service-header-three{
+        color: rgb(180, 155, 252);
+        }
+
+
+
+/* Projects */
+
+.project img{
+    width: 100%;
+}
+
+
+
+
+/* Mobile Sizes */
+
+
+/* Navigation (Mobile) */
 
 @media only screen and (max-width: 1050px){
     .main-content{
         display: flex;
         flex-direction: column;
         left: 0px;
-    }
-
-    .navbar{
-        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+        top: 50px;
     }
     
-
     .menu-items{
         display: none;
     }
 
-    .logo{
-        left: 20px;
+    .left-side-navbar{
+        left: 0px;
+        position: relative;
     }
 
     .menuitem{
@@ -161,15 +308,27 @@ a{
         margin-right: 0px;
     }
 
-    .left-side{
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: 50px;
+
+    /* Introduction (Top) (Mobile) */
+
+    .tyler-rey.left-side-content{
+        display: inline-block;
+        left: 0px;
+        padding: 5%;
     }
 
+    .left-side.info{
+        position: relative;
+        left: 0%;
+        }
+
     .left-side img{
-        width: 90%;
+        width: 100%;   
+    }
+
+    .left-side.image{
+        margin-right: 0%;
+        margin-bottom: 50px;
     }
 
     .right.side{
@@ -182,5 +341,31 @@ a{
         left: 0px;
         padding: 20px;
     }
+
+    .tyler-rey.introduction{
+        position: relative;
+        left: 0px;
+        top: 5%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    /* Services */
+
+    .tyler-rey.services{
+        text-align: center;
+    }
+
+    .service{
+        margin-bottom: 7rem;
+    }
+
+    .service p{
+        width: 100%;
+    }
     
+    .tyler-rey.services-one{
+        display: block;
+    }
 }
