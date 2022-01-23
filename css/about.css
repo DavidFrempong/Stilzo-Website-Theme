@@ -32,6 +32,11 @@ p{
     font-size: 1.1rem;
 }
 
+.tyler-rey.heading-one{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 
 /* Navigation */
 
@@ -80,10 +85,12 @@ a{
 @keyframes fadein {
     from { opacity: 0;
         transform: translate3d(-100vw,0,0);
+        transform: scale(1);
         }
 
     to   { opacity: 1;
         transform: translate3d(0,0,0);
+        transform: scale(1.1);
     }
 }
 
@@ -138,6 +145,10 @@ left: 30%;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
 }
 
+.left-side img:hover{
+    opacity: 0.9;
+}
+
 .tyler-rey.introduction{
     position: relative;
     left: 100px;
@@ -156,26 +167,29 @@ left: 30%;
     line-height: 1.5rem;
 }
 
-.social-media-icons{
+
+#diamond {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: rgb(250, 114, 114);
     position: relative;
-    top: 40px;
+    top: 100px;
+    display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    text-align: center;
-}
-
-.social-media-icons svg{
-    cursor: pointer;
-}
-
-.social-media-icons svg:hover{
-    opacity: 0.5;
-}
-
-.instagram{
-    position: relative;
-    left: 1.7em;
-}
+  }
+  #diamond:after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: rgb(250, 114, 114);
+  }
 
 
 /* Services */
@@ -186,6 +200,7 @@ left: 30%;
     position: relative;
     top: 120px;
     padding: 4.2rem;
+    margin-bottom: 40px;
 }
 
 .tyler-rey.all-services{
@@ -268,16 +283,147 @@ color: rgb(33, 201, 207);
 
     .service-header-three{
         color: rgb(180, 155, 252);
-        }
+}
+
+#diamond-two {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: rgb(250, 114, 114);
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
+  }
+  #diamond-two:after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: rgb(250, 114, 114);
+  }
+
+
 
 
 
 /* Projects */
 
-.project img{
-    width: 100%;
+.tyler-rey.work{
+    top: 160px;
+    position: relative;
+    margin-bottom: 50px;
 }
 
+.tyler-rey.all-projects{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.tyler-rey.work-heading{
+    position: relative;
+    left: 30px;
+}
+
+.tyler-rey.work-heading h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 90%;
+}
+
+.project{
+padding: 2rem;
+}
+
+.project h4{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.project img:hover{
+animation-name: imagefade;
+animation-duration: 1.2s;
+}
+
+@keyframes imagefade {
+    from { opacity: 1;
+        transform: scale(1);
+        }
+
+    to   { opacity: 0.9;
+        transform: scale(1.2)
+    }
+}
+
+
+
+.project:hover{
+    color:rgb(218, 68, 68);
+}
+
+
+/* Contact */
+
+.tyler-rey.contact{
+    position: relative;
+    top: 250px;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.tyler-rey.contact p{
+    width: 30%;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+
+.social-media-icons{
+    position: relative;
+    top: 40px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.social-media-icons a{
+    margin: 1rem;
+}
+
+.social-media-icons svg{
+    cursor: pointer;
+}
+
+.social-media-icons svg:hover{
+    opacity: 0.5;
+}
+
+
+
+/* Copyright */
+
+.tyler-rey.copywright{
+    position: relative;
+    padding: 2rem;
+    top: 11rem;
+}
+
+.tyler-rey.copywright p{
+    font-size: 0.7rem;
+}
 
 
 
@@ -308,6 +454,9 @@ color: rgb(33, 201, 207);
         margin-right: 0px;
     }
 
+    #diamond{
+        display: block;
+    }
 
     /* Introduction (Top) (Mobile) */
 
@@ -367,5 +516,59 @@ color: rgb(33, 201, 207);
     
     .tyler-rey.services-one{
         display: block;
+    }
+
+    .tyler-rey.services-right{
+        display: none;
+    }
+
+    #diamond-two{
+        display: block;
+    }
+
+
+/* Projects */
+
+.tyler-rey.work-heading{
+    text-align: center;
+    left: 0px;
+    padding: 2rem;
+}
+
+.tyler-rey.work-heading h2 {
+    width: 100%;
+}
+
+/* Contact */
+
+.tyler-rey.contact{
+    text-align: center;
+}
+
+.tyler-rey.contact p{
+    width: 100%;
+}
+
+
+/* Copyright */
+
+.tyler-rey.copywright{
+    text-align: center;
+}
+
+}
+
+
+
+@media only screen and (max-width: 760px){
+    .tyler-rey.all-projects{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    
+    .project img{
+        width: 100%;
+        border-radius: 6px;
     }
 }
