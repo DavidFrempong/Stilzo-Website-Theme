@@ -438,6 +438,16 @@ animation-duration: 1.2s;
         flex-direction: column;
         left: 0px;
         top: 50px;
+        width: 100%;
+    }
+
+    .service h2{
+        font-size: 1.5rem;
+    }
+
+    .logo{
+        font-size: 25px;
+        left: 20px;
     }
     
     .menu-items{
@@ -469,15 +479,19 @@ animation-duration: 1.2s;
     .left-side.info{
         position: relative;
         left: 0%;
+        display: flex;
+        justify-content: center;
         }
 
     .left-side img{
-        width: 100%;   
+        width: 90%;   
     }
 
     .left-side.image{
         margin-right: 0%;
         margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
     }
 
     .right.side{
@@ -495,7 +509,7 @@ animation-duration: 1.2s;
         position: relative;
         left: 0px;
         top: 5%;
-        width: 100%;
+        width: 90%;
         height: 100%;
         text-align: center;
     }

@@ -290,11 +290,13 @@ display: inline-block;
 
     .fixed-slider.information-buttons{
         display: inline-block;
+        top: 20%;
+        position: relative;
     }
 
     #button-1{
         position: static;
-        width: 90%;
+        width: 70%;
         margin-bottom: 15px;
         justify-content: center;
         margin: 0 auto;
@@ -304,11 +306,60 @@ display: inline-block;
         #button-2{
         top: 15px;
         position: static;
-        width: 90%;
+        width: 70%;
         margin: 0 auto;
         }
 
         .right-side ul{
             display: none;
         }
+
+        .fixed-slider.information-title{
+            width: 50%;
+            position: relative;
+            margin: 0 auto;
+            font-size: 1.3rem;
+            color: #FFFFFF;
+    }
+
+    .slider-item{
+        display: flex;
+        position: absolute;
+        transform: rotate(90deg);
+        right: -110px;
+        top: 40vh;
+        z-index: 4;
+        border-bottom: 1px solid #00cce7;
+    }
+
+    .fixed-slider.slide-number{
+        color: #00cce7;
+        font-size: 4em;
+        font-weight: 500;
+        opacity: 0;
+        position: relative;
+        left: 86%;
+        float: right;
+        top: 20px;
+        transform: translate3d(0, 100px, 0);
+        transition: transform .4s ease-in-out 1s, opacity 0.4s ease-in-out 1s;
+    }
+
+    .page-duration{
+        display: flex;
+        position: absolute;
+        transform: rotate(90deg);
+        top: 45vh;
+        left: -20px;
+        z-index: 4;
+    }
+
+    .fixed-slider.information-description{
+        position: relative;
+        top: 40%;
+    }
+
+    .slider-link{
+        font-size: 0.85em;
+    }
 }
