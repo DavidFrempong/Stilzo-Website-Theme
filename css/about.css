@@ -161,7 +161,8 @@ left: 30%;
 }
 
 .first-paragraph{
-    font-size: 1.3rem;
+    font-size: 1rem;
+    max-width: 100%;
     font-weight: 500;
     color:rgb(48, 48, 48);
     line-height: 1.5rem;
@@ -339,11 +340,17 @@ color: rgb(33, 201, 207);
 
 .project{
 padding: 2rem;
+text-align: center;
+margin-bottom: 60px;
 }
 
 .project h4{
     font-size: 1.2rem;
-    text-align: center;
+    margin-bottom: 15px;
+}
+
+.project p{
+    font-size: 1rem;
 }
 
 .project img{
@@ -378,7 +385,7 @@ animation-duration: 1.2s;
 
 .tyler-rey.contact{
     position: relative;
-    top: 250px;
+    top: 200px;
     padding: 2rem;
     margin-bottom: 5rem;
     margin-top: 50px;
@@ -387,7 +394,7 @@ animation-duration: 1.2s;
 
 .tyler-rey.contact p{
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.3rem;
 }
 
