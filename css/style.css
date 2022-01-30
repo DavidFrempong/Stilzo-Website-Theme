@@ -76,7 +76,7 @@ a{
 
  .fixed-slider{
      width: 100%;
-     position: relative;
+     position: fixed;
  }
 
  .fixed-slider-container{
