@@ -33,6 +33,13 @@ a{
     width: fit-content;
 }
 
+h1{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    width: 120px;
+}
+
+
 h2{
     font-size: 2.5rem;
     font-weight: 800;
@@ -100,14 +107,14 @@ a{
 }
 
  .logo{
-    color: #ff7b7b;
-    font-weight: 700;
+    color: #000000;
+    font-weight: 900;
     cursor: pointer;
     text-align: center;
     justify-content: center;
 
-    font-family: 'Montez', cursive;
-    font-size: 35px;
+    /* font-family: 'Montez', cursive; */
+    font-size: 27px;
     left: 50px;
     position: relative;
     top: -4px;
@@ -197,8 +204,7 @@ nav a {
 
 .navbar_contact {
     padding: 10px 15px;
-    background: #ff5151;
-    border-radius: 4px;
+    background: #000000;
     font-weight: 700;
     color: #ffffff;
     font-weight: 700;
@@ -287,7 +293,7 @@ position: relative;
     width: 100%;
     height: 100%;
     top: 40px;
-    text-align: center;
+    text-align: left;
 }
 
 .tyler-rey.introduction span{
@@ -295,12 +301,19 @@ position: relative;
 }
 
 .first-paragraph{
+    text-align: center;
     font-size: 1rem;
-    max-width: 70%;
-    margin: 0 22%;
+    max-width: 60%;
+    margin: 0 25%;
     font-weight: 500;
     color:rgb(48, 48, 48);
     line-height: 1.5rem;
+}
+
+.first-paragraph.introduction{
+    text-align: left;
+    margin: 0;
+    max-width: 65%;
 }
 
 
@@ -308,7 +321,7 @@ position: relative;
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-bottom-color: rgb(250, 114, 114);
+    border-bottom-color: rgb(0, 0, 0);
     position: relative;
     top: 50px;
     display: flex;
@@ -324,7 +337,7 @@ position: relative;
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-top-color: rgb(250, 114, 114);
+    border-top-color: rgb(0, 0, 0);
   }
 
 
@@ -336,7 +349,7 @@ position: relative;
     position: relative;
     top: 120px;
     padding: 4.2rem;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .tyler-rey.all-services{
@@ -356,6 +369,7 @@ position: relative;
 
 .service h2{
     margin-top: 1.7rem;
+    font-size: 1.7rem;
 }
 
 .service p{
@@ -366,9 +380,9 @@ position: relative;
 .triangle-one{
     width: 0; 
     height: 0; 
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent; 
-    border-right:50px solid rgb(33, 201, 207); 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent; 
+    border-right:40px solid rgb(0, 0, 0); 
   /*  transform: rotate(-55deg); */
     position: relative;
     top: 10%;
@@ -376,56 +390,56 @@ position: relative;
 }
 
 .triangle-one:hover{
-    border-right:50px solid rgb(8, 150, 155);
+    border-right:40px solid rgb(41, 41, 41);
 }
 
 .triangle-two{
     width: 0; 
     height: 0; 
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent; 
-    border-right:50px solid blue; 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent; 
+    border-right:40px solid rgb(0, 0, 0);
     position: relative;
     top: 35%;
     left: 70px;
 }
 
 .triangle-two:hover{
-    border-right:50px solid rgb(14, 3, 172);
+    border-right:40px solid rgb(41, 41, 41);
 }
 
 .triangle-three{
     width: 0; 
     height: 0; 
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent; 
-    border-right:50px solid rgb(87, 30, 243); 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent; 
+    border-right:40px solid rgb(0, 0, 0); 
     position: relative;
     top: 60%;
     left: 70px;
 }
 
 .triangle-three:hover{
-    border-right:50px solid rgb(63, 26, 167);
+    border-right:40px solid rgb(41, 41, 41);
 }
 
 .service-header-one{
-color: rgb(33, 201, 207);
+color: rgb(0, 0, 0);
 }
 
 .service-header-two{
-    color: rgb(75, 158, 253);
+    color: rgb(0, 0, 0);
     }
 
     .service-header-three{
-        color: rgb(180, 155, 252);
+        color: rgb(0, 0, 0);
 }
 
 #diamond-two {
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-bottom-color: rgb(250, 114, 114);
+    border-bottom-color: rgb(0, 0, 0);
     position: relative;
     top: -40px;
     display: flex;
@@ -442,12 +456,34 @@ color: rgb(33, 201, 207);
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-top-color: rgb(250, 114, 114);
+    border-top-color: rgb(0, 0, 0);
   }
 
 
+  /* Experience */
 
+  #tyler-rey_experience{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    position: relative;
+    top: 120px;
+    padding: 4.2rem;
+    margin-bottom: 0px;
+}
 
+.experience{
+    margin-bottom: 9rem;
+}
+
+.experience h2{
+    margin-top: 1.7rem;
+    font-size: 1.9rem;
+}
+
+.experience p{
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
 
 /* Projects */
 
@@ -468,13 +504,19 @@ color: rgb(33, 201, 207);
 }
 
 .tyler-rey.work-heading h1{
-    color: #ff7b7b;
+    color: #000000;
+    margin-bottom: 2rem;
 }
 
 .tyler-rey.work-heading h2{
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
     width: 90%;
+}
+
+.first-paragraph.work {
+    margin: 0;
+    max-width: 100%;
 }
 
 .project{
@@ -533,13 +575,30 @@ animation-duration: 2s;
 }
 
 #tyler-rey_contact h1{
-    color: #ff7b7b;
+    color: #000000;
+    margin-bottom: 1.7rem;
 }
 
 #tyler-rey_contact p{
-    width: 30%;
-    font-size: 1.1rem;
-    line-height: 1.3rem;
+    width: 47%;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    margin-bottom: 1.7rem;
+}
+
+.contact-container{
+    margin-bottom: 1rem;
+}
+
+.contact-container span{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.contact-container a{
+    color:rgb(0, 0, 0);
+    font-weight: 400;
 }
 
 .social-media-icons{
@@ -590,6 +649,13 @@ animation-duration: 2s;
         left: 0px;
         top: 50px;
         width: 100%;
+    }
+
+    .centered-title-div{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
     .service h2{
@@ -696,6 +762,12 @@ animation-duration: 2s;
         text-align: center;
     }
 
+    .first-paragraph.introduction{
+        text-align: center;
+        margin: 0 0%;
+        max-width: 100%;
+    }
+
     .first-paragraph{
         margin: 0 0%;
         max-width: 100%;
@@ -707,6 +779,11 @@ animation-duration: 2s;
         text-align: center;
     }
 
+#tyler-rey-services h1{
+    margin: 0 0%;
+    max-width: 100%;
+    width: 100%
+}
     .service{
         margin-bottom: 7rem;
     }
