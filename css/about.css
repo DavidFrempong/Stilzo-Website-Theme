@@ -5,65 +5,63 @@
 /* Body */
 /* Body Content */
 
-
-
 /* Body */
 
-html{
+html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     overflow-x: hidden;
     overflow-y: visible;
     background: #f5f5f5;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     height: 100%;
 }
 
-a{
+a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.main-content{
+.main-content {
     display: block;
     position: relative;
     top: 110px;
     width: fit-content;
 }
 
-h1{
+h1 {
     border-bottom: 2px solid black;
     padding-bottom: 5px;
     width: 120px;
 }
 
-
-h2{
+h2 {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
 
-p{
+p {
     font-size: 1.1rem;
 }
 
-.tyler-rey.heading-one{
+.tyler-rey.heading-one {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.body{
+.body {
     display: none;
 }
 
-.body.active{
+.body.active {
     display: block;
 }
 
-.loader{
+.loader {
     display: flex;
     justify-content: center;
     position: relative;
@@ -72,19 +70,18 @@ p{
     top: 50%;
 }
 
-.loader .logo{
+.loader .logo {
     position: relative;
     left: 0;
 }
 
 .fade {
     opacity: 1;
-  }
-
+}
 
 /* Navigation */
 
-.navbar{
+.navbar {
     background: none;
     width: 100%;
     padding-top: 60px;
@@ -92,21 +89,21 @@ p{
     position: relative;
 }
 
-a{
+a {
     color: #ffffff;
     font-weight: 500;
 }
 
-.left-side-navbar{
+.left-side-navbar {
     left: 0px;
     position: relative;
 }
 
-.right.side-navbar{
+.right.side-navbar {
     display: none;
 }
 
- .logo{
+.logo {
     color: #000000;
     font-weight: 900;
     cursor: pointer;
@@ -119,53 +116,56 @@ a{
     position: relative;
     top: -4px;
     cursor: pointer;
- }
+}
 
- .logo:hover{
-     opacity: 0.5;
- }
- 
- .menu-items{
+.logo:hover {
+    opacity: 0.5;
+}
+
+.menu-items {
     cursor: pointer;
     display: none;
 }
 
-.menu-items a:hover{
+.menu-items a:hover {
     opacity: 0.5;
 }
 
 /* Animations */
 
 @keyframes fadein {
-    from { opacity: 0;
-        }
+    from {
+        opacity: 0;
+    }
 
-    to   { opacity: 1;
+    to {
+        opacity: 1;
     }
 }
 
 @keyframes fadeout {
-    from { opacity: 1;
-        transform: translate3d(0,0,0);
-        }
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 
-    to   { opacity: 0;
-        transform: translate3d(100vw,0,0);
+    to {
+        opacity: 0;
+        transform: translate3d(100vw, 0, 0);
     }
 }
-
 
 @keyframes fadeup {
-    from { opacity: 0;
-        transform: translate3d(0,200px,0);
-        }
+    from {
+        opacity: 0;
+        transform: translate3d(0, 200px, 0);
+    }
 
-    to   { opacity: 1;
-        transform: translate3d(0,0,0);
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
-
-
 
 .right_side_navbar {
     float: right;
@@ -192,7 +192,7 @@ nav a {
     display: none;
 }
 
-.x-mark{
+.x-mark {
     width: 30px;
     height: 25px;
     position: relative;
@@ -210,12 +210,11 @@ nav a {
     font-weight: 700;
 }
 
-
 /* Hamburger menu */
 
-.menu_mobile{
+.menu_mobile {
     background: #0a0a0a;
-    color:#ffffff;
+    color: #ffffff;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -226,7 +225,7 @@ nav a {
     display: none;
 }
 
-.right_side_navbar_items_mobile{
+.right_side_navbar_items_mobile {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -235,58 +234,53 @@ nav a {
     text-align: center;
 }
 
-.right_side_navbar_items_mobile a{
+.right_side_navbar_items_mobile a {
     margin-bottom: 30px;
     cursor: pointer;
-    color:#ffffff;
+    color: #ffffff;
 }
 
-.right_side_navbar_items_mobile a:hover{
+.right_side_navbar_items_mobile a:hover {
     text-decoration: underline;
 }
 
-.navbar_contact.mobile{
+.navbar_contact.mobile {
     width: 110px;
 }
 
-
-
-
-
 /* Body Content */
-
 
 /* Introduction (Top) */
 
-.tyler-rey.left-side-content{
+.tyler-rey.left-side-content {
     display: flex;
     left: 40px;
     position: relative;
     margin-bottom: 3rem;
 }
 
-.left-side.info{
-position: relative;
-/* right: 35%; */
+.left-side.info {
+    position: relative;
+    /* right: 35%; */
 }
 
-.left-side.image{
+.left-side.image {
     /* margin-right: 10%; */
     animation-name: fadein;
     animation-duration: 2s;
 }
 
-.left-side img{
+.left-side img {
     width: 300px;
     border-radius: 10px;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
 }
 
-.left-side img:hover{
+.left-side img:hover {
     opacity: 0.9;
 }
 
-.tyler-rey.introduction{
+.tyler-rey.introduction {
     position: relative;
     right: 0;
     left: 200px;
@@ -296,26 +290,25 @@ position: relative;
     text-align: left;
 }
 
-.tyler-rey.introduction span{
-    color:rgb(250, 114, 114);
+.tyler-rey.introduction span {
+    color: rgb(250, 114, 114);
 }
 
-.first-paragraph{
+.first-paragraph {
     text-align: center;
     font-size: 1rem;
     max-width: 60%;
     margin: 0 25%;
     font-weight: 500;
-    color:rgb(48, 48, 48);
+    color: rgb(48, 48, 48);
     line-height: 1.5rem;
 }
 
-.first-paragraph.introduction{
+.first-paragraph.introduction {
     text-align: left;
     margin: 0;
     max-width: 65%;
 }
-
 
 #diamond {
     width: 0;
@@ -328,9 +321,9 @@ position: relative;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-  }
-  #diamond:after {
-    content: '';
+}
+#diamond:after {
+    content: "";
     position: absolute;
     left: -20px;
     top: 20px;
@@ -338,12 +331,11 @@ position: relative;
     height: 0;
     border: 20px solid transparent;
     border-top-color: rgb(0, 0, 0);
-  }
-
+}
 
 /* Services */
 
-#tyler-rey_services{
+#tyler-rey_services {
     background-color: rgb(255, 255, 255);
     color: #000000;
     position: relative;
@@ -352,87 +344,87 @@ position: relative;
     margin-bottom: 0px;
 }
 
-.tyler-rey.all-services{
+.tyler-rey.all-services {
     top: 2.4rem;
     position: relative;
     animation-name: fadeup;
     animation-duration: 4s;
 }
 
-.tyler-rey.services-one{
+.tyler-rey.services-one {
     display: flex;
 }
 
-.service{
+.service {
     margin-bottom: 9rem;
 }
 
-.service h2{
+.service h2 {
     margin-top: 1.7rem;
     font-size: 1.7rem;
 }
 
-.service p{
+.service p {
     width: 30%;
     line-height: 1.4rem;
 }
 
-.triangle-one{
-    width: 0; 
-    height: 0; 
+.triangle-one {
+    width: 0;
+    height: 0;
     border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent; 
-    border-right:40px solid rgb(0, 0, 0); 
-  /*  transform: rotate(-55deg); */
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid rgb(0, 0, 0);
+    /*  transform: rotate(-55deg); */
     position: relative;
     top: 10%;
     left: 70px;
 }
 
-.triangle-one:hover{
-    border-right:40px solid rgb(41, 41, 41);
+.triangle-one:hover {
+    border-right: 40px solid rgb(41, 41, 41);
 }
 
-.triangle-two{
-    width: 0; 
-    height: 0; 
+.triangle-two {
+    width: 0;
+    height: 0;
     border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent; 
-    border-right:40px solid rgb(0, 0, 0);
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid rgb(0, 0, 0);
     position: relative;
     top: 35%;
     left: 70px;
 }
 
-.triangle-two:hover{
-    border-right:40px solid rgb(41, 41, 41);
+.triangle-two:hover {
+    border-right: 40px solid rgb(41, 41, 41);
 }
 
-.triangle-three{
-    width: 0; 
-    height: 0; 
+.triangle-three {
+    width: 0;
+    height: 0;
     border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent; 
-    border-right:40px solid rgb(0, 0, 0); 
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid rgb(0, 0, 0);
     position: relative;
     top: 60%;
     left: 70px;
 }
 
-.triangle-three:hover{
-    border-right:40px solid rgb(41, 41, 41);
+.triangle-three:hover {
+    border-right: 40px solid rgb(41, 41, 41);
 }
 
-.service-header-one{
-color: rgb(0, 0, 0);
-}
-
-.service-header-two{
+.service-header-one {
     color: rgb(0, 0, 0);
-    }
+}
 
-    .service-header-three{
-        color: rgb(0, 0, 0);
+.service-header-two {
+    color: rgb(0, 0, 0);
+}
+
+.service-header-three {
+    color: rgb(0, 0, 0);
 }
 
 #diamond-two {
@@ -447,9 +439,9 @@ color: rgb(0, 0, 0);
     align-items: center;
     margin: 0 auto;
     display: none;
-  }
-  #diamond-two:after {
-    content: '';
+}
+#diamond-two:after {
+    content: "";
     position: absolute;
     left: -20px;
     top: 20px;
@@ -457,12 +449,11 @@ color: rgb(0, 0, 0);
     height: 0;
     border: 20px solid transparent;
     border-top-color: rgb(0, 0, 0);
-  }
+}
 
+/* Experience */
 
-  /* Experience */
-
-  #tyler-rey_experience{
+#tyler-rey_experience {
     background-color: rgb(255, 255, 255);
     color: #000000;
     position: relative;
@@ -471,44 +462,44 @@ color: rgb(0, 0, 0);
     margin-bottom: 0px;
 }
 
-.experience{
+.experience {
     margin-bottom: 9rem;
 }
 
-.experience h2{
+.experience h2 {
     margin-top: 1.7rem;
     font-size: 1.9rem;
 }
 
-.experience p{
+.experience p {
     font-weight: 700;
     margin-bottom: 0.7rem;
 }
 
 /* Projects */
 
-#tyler-rey_work{
+#tyler-rey_work {
     top: 160px;
     position: relative;
     margin-bottom: 50px;
 }
 
-.tyler-rey.all-projects{
+.tyler-rey.all-projects {
     display: grid;
     grid-template-columns: auto auto;
 }
 
-.tyler-rey.work-heading{
+.tyler-rey.work-heading {
     position: relative;
     left: 30px;
 }
 
-.tyler-rey.work-heading h1{
+.tyler-rey.work-heading h1 {
     color: #000000;
     margin-bottom: 2rem;
 }
 
-.tyler-rey.work-heading h2{
+.tyler-rey.work-heading h2 {
     font-size: 1.4rem;
     font-weight: 400;
     width: 90%;
@@ -519,53 +510,52 @@ color: rgb(0, 0, 0);
     max-width: 100%;
 }
 
-.project{
-padding: 2rem;
-text-align: center;
-margin-bottom: 60px;
-cursor: pointer;
+.project {
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    cursor: pointer;
 }
 
-.project h4{
+.project h4 {
     font-size: 1.2rem;
     margin-bottom: 15px;
 }
 
-.project p{
+.project p {
     font-size: 1rem;
     font-weight: 500;
     color: #1f1f1f;
 }
 
-.project img{
+.project img {
     width: 100%;
     border-radius: 6px;
     margin-bottom: 20px;
 }
 
-.project img:hover{
-animation-name: imagefade;
-animation-duration: 2s;
+.project img:hover {
+    animation-name: imagefade;
+    animation-duration: 2s;
 }
 
 @keyframes imagefade {
-    from { opacity: 1;
-        }
+    from {
+        opacity: 1;
+    }
 
-    to   { opacity: 0.5;
+    to {
+        opacity: 0.5;
     }
 }
 
-
-
-.project:hover{
-    color:rgb(218, 68, 68);
+.project:hover {
+    color: rgb(218, 68, 68);
 }
-
 
 /* Contact */
 
-#tyler-rey_contact{
+#tyler-rey_contact {
     position: relative;
     top: 200px;
     padding: 2rem;
@@ -574,34 +564,34 @@ animation-duration: 2s;
     text-align: left;
 }
 
-#tyler-rey_contact h1{
+#tyler-rey_contact h1 {
     color: #000000;
     margin-bottom: 1.7rem;
 }
 
-#tyler-rey_contact p{
+#tyler-rey_contact p {
     width: 47%;
     font-size: 1.5rem;
     line-height: 1.9rem;
     margin-bottom: 1.7rem;
 }
 
-.contact-container{
+.contact-container {
     margin-bottom: 1rem;
 }
 
-.contact-container span{
+.contact-container span {
     font-weight: 700;
     font-size: 1.2rem;
     margin-right: 5px;
 }
 
-.contact-container a{
-    color:rgb(0, 0, 0);
+.contact-container a {
+    color: rgb(0, 0, 0);
     font-weight: 400;
 }
 
-.social-media-icons{
+.social-media-icons {
     position: relative;
     top: 40px;
     justify-content: space-between;
@@ -609,41 +599,42 @@ animation-duration: 2s;
     margin-bottom: 20px;
 }
 
-.social-media-icons a{
+.social-media-icons a {
     margin: 1rem;
 }
 
-.social-media-icons svg{
+.social-media-icons svg {
     cursor: pointer;
 }
 
-.social-media-icons svg:hover{
+.social-media-icons svg:hover {
     opacity: 0.5;
 }
 
-
-
 /* Copyright */
 
-.tyler-rey.copywright{
+.tyler-rey.copywright {
     position: relative;
     padding: 2rem;
     top: 11rem;
 }
 
-.tyler-rey.copywright p{
+.tyler-rey.copywright p {
     font-size: 0.7rem;
 }
 
-
-
 /* Mobile Sizes */
-
 
 /* Navigation (Mobile) */
 
-@media only screen and (max-width: 850px){
-    .main-content{
+@media only screen and (max-width: 1100px){
+    .first-paragraph.introduction{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .main-content {
         display: flex;
         flex-direction: column;
         left: 0px;
@@ -651,40 +642,39 @@ animation-duration: 2s;
         width: 100%;
     }
 
-    .centered-title-div{
+    .centered-title-div {
         text-align: center;
         align-items: center;
         display: flex;
         justify-content: center;
     }
 
-    .service h2{
+    .service h2 {
         font-size: 1.5rem;
     }
 
-    .logo{
+    .logo {
         font-size: 25px;
         left: 50px;
     }
-    
-    .menu-items{
+
+    .menu-items {
         display: none;
     }
 
-    .left-side-navbar{
+    .left-side-navbar {
         left: 0px;
         position: relative;
     }
 
-    .menuitem{
+    .menuitem {
         margin-bottom: 10px;
         margin-right: 0px;
     }
 
-    #diamond{
+    #diamond {
         display: block;
     }
-
 
     .right_side_navbar_items {
         display: none;
@@ -699,11 +689,11 @@ animation-duration: 2s;
         cursor: pointer;
     }
 
-    .menu_mobile.active{
+    .menu_mobile.active {
         display: block;
     }
-    
-    .x-mark.active{
+
+    .x-mark.active {
         display: block;
     }
 
@@ -715,34 +705,33 @@ animation-duration: 2s;
         top: -10px;
     }
 
-
     /* Introduction (Top) (Mobile) */
 
-    .tyler-rey.left-side-content{
+    .tyler-rey.left-side-content {
         display: inline-block;
         left: 0px;
         padding: 5%;
     }
 
-    .left-side.info{
+    .left-side.info {
         position: relative;
         left: 0%;
         display: flex;
         justify-content: center;
-        }
-
-    .left-side img{
-        width: 50%;   
     }
 
-    .left-side.image{
+    .left-side img {
+        width: 50%;
+    }
+
+    .left-side.image {
         margin-right: 0%;
         margin-bottom: 50px;
         display: flex;
         justify-content: center;
     }
 
-    .right.side{
+    .right.side {
         position: relative;
         width: 85%;
         justify-content: center;
@@ -753,7 +742,7 @@ animation-duration: 2s;
         padding: 20px;
     }
 
-    .tyler-rey.introduction{
+    .tyler-rey.introduction {
         position: relative;
         left: 0px;
         top: 5%;
@@ -762,96 +751,90 @@ animation-duration: 2s;
         text-align: center;
     }
 
-    .first-paragraph.introduction{
+    .first-paragraph.introduction {
         text-align: center;
         margin: 0 0%;
         max-width: 100%;
     }
 
-    .first-paragraph{
+    .first-paragraph {
         margin: 0 0%;
         max-width: 100%;
     }
 
     /* Services */
 
-    #tyler-rey_services{
+    #tyler-rey_services {
         text-align: center;
     }
 
-#tyler-rey-services h1{
-    margin: 0 0%;
-    max-width: 100%;
-    width: 100%
-}
-    .service{
+    #tyler-rey-services h1 {
+        margin: 0 0%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .service {
         margin-bottom: 7rem;
     }
 
-    .service p{
+    .service p {
         width: 100%;
     }
-    
-    .tyler-rey.services-one{
+
+    .tyler-rey.services-one {
         display: block;
     }
 
-    .tyler-rey.services-right{
+    .tyler-rey.services-right {
         display: none;
     }
 
-    #diamond-two{
+    #diamond-two {
         display: block;
     }
 
+    /* Projects */
 
-/* Projects */
+    .tyler-rey.work-heading {
+        text-align: center;
+        left: 0px;
+        padding: 2rem;
+    }
 
-.tyler-rey.work-heading{
-    text-align: center;
-    left: 0px;
-    padding: 2rem;
+    .tyler-rey.work-heading h2 {
+        width: 100%;
+    }
+
+    /* Contact */
+
+    #tyler-rey_contact {
+        text-align: center;
+    }
+
+    #tyler-rey_contact p {
+        width: 100%;
+    }
+
+    /* Copyright */
+
+    .tyler-rey.copywright {
+        text-align: center;
+    }
 }
 
-.tyler-rey.work-heading h2 {
-    width: 100%;
-}
-
-/* Contact */
-
-#tyler-rey_contact{
-    text-align: center;
-}
-
-#tyler-rey_contact p{
-    width: 100%;
-}
-
-
-/* Copyright */
-
-.tyler-rey.copywright{
-    text-align: center;
-}
-
-}
-
-
-
-@media only screen and (max-width: 760px){
-    .tyler-rey.all-projects{
+@media only screen and (max-width: 760px) {
+    .tyler-rey.all-projects {
         display: grid;
         grid-template-columns: auto;
     }
 
-    
-    .project img{
+    .project img {
         width: 100%;
         border-radius: 6px;
     }
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px) {
     /* html, body {
         max-width: 100%;
         max-height: 100%;
