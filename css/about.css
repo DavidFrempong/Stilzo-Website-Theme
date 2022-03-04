@@ -268,7 +268,8 @@ nav a {
     /* margin-right: 10%; */
     animation-name: fadein;
     animation-duration: 2s;
-    background: #cfcfcf;
+
+    /* background: #cfcfcf;
     color: #ffffff;
     text-align: center;
     justify-content: center;
@@ -276,7 +277,7 @@ nav a {
     line-height: 300px;
     width: 400px;
     border-radius: 10px;
-    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25)); */
 }
 
 .left-side img {
@@ -650,7 +651,7 @@ nav a {
     }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1000px) {
     .main-content {
         display: flex;
         flex-direction: column;
@@ -742,10 +743,9 @@ nav a {
     }
 
     .left-side.image {
-        padding: 0 20px;
         margin-right: 0%;
         margin: 0 auto;
-        width: 40%;
+        width: 100%;
         margin-bottom: 50px;
         display: flex;
         justify-content: center;
